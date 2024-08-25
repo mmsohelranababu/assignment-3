@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en data-theme=" light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- tailwind and daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind CSS config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(139, 195, 74)',
+            secondary: 'rgb(17, 17, 17)',
+            body: 'rgb(248, 246, 243)',
+            accent: 'rgb(106, 151, 57)',
+            body_neutral: 'rgb(51, 51, 51)',
+          },
+          fontFamily: {
+            Manrope: 'Manrope',
+          },
+          backgroundImage: {
+            leaf1: "url('./images/leaf01.png')",
+            call_to_action: "url('./images/call.jpg')",
+            testimonials: "url('./images/testimonials.jpg')",
+            bannerImage: "url('./images/bannerbg.png')",
+
+          },
+        },
+      },
+    }
+  </script>
+
+</head>
+
+<body>
+
+
+  <header class="bg-gradient-to-t to-slate-100 from-white">
+
+    <!-- nav section -->
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar  p-0 py-2">
+        <div class="navbar-start">
+          <div class="flex justify-center gap-2 items-center">
+            <i class=" fa-solid fa-arrow-right fa-rotate-by bg-lime-500 px-2 py-2 rounded-full"
+              style="--fa-rotate-angle: -45deg;""></i>
+            <span class=" text-gray-900 text-3xl font-bold">Rinterio</span>
+          </div>
+
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li class="hover:text-lime-500"><a>Home</a></li>
+            <li class="hover:text-lime-500"><a>Service</a></li>
+            <li class="hover:text-lime-500"><a>Portfolio</a></li>
+            <li class="hover:text-lime-500"><a>Blogs</a></li>
+            <li class="hover:text-lime-500"><a>Contact Us</a></li>
+
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class=" flex items-center gap-5 text-base">
+            <button class="flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass px-2 py-2 rounded-full bg-white border-2"></i>
+              <i class="fa-solid fa-cart-shopping px-2 py-2 rounded-full bg-white border-2"></i>
+            </button>
+            <div>
+              <button>Book Consult <i class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
+                  style="color: #ffffff; --fa-rotate-angle: -45deg;""></i></button>
+            </div>
+
+
+          </div>
+
+          <div class=" dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                  </div>
+                  <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+                    <li class="hover:text-lime-500"><a>Home</a></li>
+                    <li class="hover:text-lime-500"><a>Service</a></li>
+                    <li class="hover:text-lime-500"><a>Portfolio</a></li>
+                    <li class="hover:text-lime-500"><a>Blogs</a></li>
+                    <li class="hover:text-lime-500"><a>Contact Us</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class="h-[80vh] bg-leaf1 bg-no-repeat bg-right-bottom ">
+      <div>
+        <div class="flex-1">
+          <img src="./images/bannerbg.png" alt="">
+        </div>
+        <div>
+          <h4>Best Quality Product</h4>
+          <h1>Join The Organic Movement !</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed labore doloremque ad fuga unde
+          </p>
+          <div>
+            <button><i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <span>Shop Now </span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </header>
+
+
+</body>
+
+</html>
