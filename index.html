@@ -77,13 +77,14 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <div class=" flex items-center gap-5 text-base">
+          <div class="items-center gap-5 text-base hidden lg:flex">
             <button class="flex items-center gap-2">
               <i class="fa-solid fa-magnifying-glass px-2 py-2 rounded-full bg-white border-2"></i>
               <i class="fa-solid fa-cart-shopping px-2 py-2 rounded-full bg-white border-2"></i>
             </button>
-            <div>
-              <button>Book Consult <i class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
+            <div class="bg-lime-500 px-4 py-2 rounded-full hidden lg:flex">
+              <button class="font-bold">Book Consult <i
+                  class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
                   style="color: #ffffff; --fa-rotate-angle: -45deg;""></i></button>
             </div>
 
@@ -92,7 +93,7 @@
 
           <div class=" dropdown">
                   <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <i class="fa-solid fa-bars fa-lg"></i>
+                    <i class="fa-solid fa-bars fa-lg "></i>
                   </div>
                   <ul tabindex="0"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
@@ -108,22 +109,25 @@
     </nav>
 
     <!-- banner section -->
-    <section class="h-[80vh] bg-leaf1 bg-no-repeat bg-right-bottom ">
+    <section class=" flex items-center justify-center flex-col text-center	">
+      <div class="w-[32rem] mx-auto">
+        <img src="./images/banner.png" alt="">
+      </div>
       <div>
-        <div class="flex-1">
-          <img src="./images/bannerbg.png" alt="">
-        </div>
-        <div>
-          <h4>Best Quality Product</h4>
-          <h1>Join The Organic Movement !</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed labore doloremque ad fuga unde
-          </p>
-          <div>
-            <button><i class="fa-solid fa-cart-shopping"></i>
-            </button>
-            <span>Shop Now </span>
-          </div>
-        </div>
+        <h2 class="w-[67rem] text-6xl font-bold mb-4 mx-auto">A barn house of this design has a <br> striking appearance
+        </h2>
+        <p class="w-[60rem] text-2xl text-gray-400 mx-auto">The barn house captivates with its blend of rustic charm and
+          modern
+          sophistication, featuring weathered wood,
+          sleek
+          metal accents, and large windows that flood the space with natural light.
+        </p>
+        <div class="bg-lime-500 px-4 py-2 rounded-full hidden lg:flex w-[12rem] mx-auto">
+          <button class="font-bold text-center">Book Consult <i
+              class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
+              style="color: #ffffff; --fa-rotate-angle: -45deg;""></i></button>
+                    </div>
+      </div>
 
       </div>
 
