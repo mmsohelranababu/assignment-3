@@ -204,7 +204,8 @@
     </section>
 
     <!-- our review section -->
-    <section class="w-11/12 mt-16 mx-auto flex justify-evenly bg-white rounded-xl items-center px-5 py-5">
+    <section
+      class="w-11/12 mt-16 mx-auto flex justify-evenly bg-white rounded-xl items-center px-5 py-5 lg:flex-row sm:flex flex-col gap-16">
       <div class="items-center text-center">
         <i class="fa-solid fa-comment text-4xl"></i>
         <h1 class="text-4xl font-bold">235+</h1>
@@ -246,7 +247,7 @@
       </div>
 
       <!-- cards -->
-      <div class="flex justify-evenly mt-10">
+      <div class="flex justify-evenly mt-10 lg:flex-row sm:flex flex-col gap-8 justify-center items-center">
         <div class="bg-[#fbcfe8] w-[17rem] h-auto px-5 py-5 rounded-xl">
           <img src="./images/concept.png" alt="">
           <h2 class="text-xl font-bold">Concept</h2>
@@ -293,7 +294,7 @@
 
 
       <!-- Row-1 -->
-      <div class="grid grid-cols-12 gap-5 mt-12 w-11/12 mx-auto  ">
+      <div class="lg:grid grid-cols-12 gap-5 mt-12 w-11/12 mx-auto sm:flex flex-col">
 
         <!-- cards-1 -->
         <div class="flex border-2 border-gray-400 rounded-2xl px-4 py-4 col-span-9">
@@ -321,7 +322,7 @@
         </div>
 
         <!-- Row-2 -->
-        <div class="mx-auto grid grid-cols-12 gap-5 mt-5 w-11/12 mx-auto ">
+        <div class="lg:mx-auto grid grid-cols-12 gap-5 mt-5 w-11/12 mx-autol">
           <!-- cards-3 -->
 
           <div class=" border-2 border-gray-400 rounded-2xl p-4 h-auto w-auto col-span-3"><img src="./images/img3.png"
@@ -368,29 +369,31 @@
           investments across more than 100.</p>
       </div>
 
-      <div class="text-center mt-7">
+      <div class="lg:text-center mt-7 ">
         <div>
-          <input class="w-1/4 rounded-full p-2" type="text" placeholder="First Name*">
+          <input class="lg:w-1/4 rounded-full p-2 
+          " type="text" placeholder="First Name*">
           <input class="w-1/4 rounded-full p-2 type=" text" placeholder="Last Name*">
-        </div>
-        <div class="mt-6">
-          <input class="w-1/4 rounded-full p-2  type=" number" placeholder="Phone Number*">
-          <input class="w-1/4 rounded-full p-2 type=" email" placeholder="Email Number*">
+          </divclass>
+          <div class="mt-6">
+            <input class="w-1/4 rounded-full p-2  type=" number" placeholder="Phone Number*">
+            <input class="w-1/4 rounded-full p-2 type=" email" placeholder="Email Number*">
+
+          </div>
+          <div>
+            <input class="w-[42rem] h-[15rem] p-10 rounded-2xl mt-7" type="text"
+              placeholder="Write to your message here">
+          </div>
 
         </div>
-        <div>
-          <input class="w-[42rem] h-[15rem] p-10 rounded-2xl mt-7" type="text" placeholder="Write to your message here">
-        </div>
+        <div class="justify-center items-center gap-5  flex mt-5">
 
-      </div>
-      <div class="justify-center items-center gap-5  flex mt-5">
-
-        <div class="bg-lime-400 px-4 py-2 rounded-full lg:flex w-2/4 justify-center">
-          <button class="font-bold">Send Mail <i
-              class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
-              style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
+          <div class="bg-lime-400 px-4 py-2 rounded-full lg:flex w-2/4 justify-center">
+            <button class="font-bold">Send Mail <i
+                class="fa-solid fa-arrow-right fa-rotate-by px-1.5 py-1.5 rounded-full bg-black"
+                style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
+          </div>
         </div>
-      </div>
     </section>
 
     </main>
@@ -407,8 +410,9 @@
     weathered wood, sleek
     metal accents.</p>
 
-  <div class="text-center">
-    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+  <div class="text-center place-items-center">
+    <ul
+      class="flex lg:flex-row justify-center menu menu-horizontal px-1 text-lg font-medium  sm:flex flex-col justify-center items-center">
       <li class="hover:text-lime-500"><a>Home</a></li>
       <li class="hover:text-lime-500"><a>Service</a></li>
       <li class="hover:text-lime-500"><a>Portfolio</a></li>
